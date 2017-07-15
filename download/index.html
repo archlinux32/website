@@ -63,6 +63,7 @@
         <li> Put any mirror from <a href="https://raw.githubusercontent.com/archlinux32/packages/master/core/pacman-mirrorlist/mirrorlist">our mirrolist</a>
              into <code>/etc/pacman.d/mirrorlist</code>.
         <li> Execute <code>pacman -Syyw archlinux32-keyring</code> to download our keyring package.
+             Note, that the signature is by 0x7C98C4C3DE926168DC46FBAA3D06644243BF68D3, which is not trusted by pacman (yet).
         <li> Execute <code>pacman -U /var/cache/pacman/pkg/archlinux32-keyring-*.pkg.tar.xz</code> to install our keyring package.
         <li> Run <code>pacman -Suu</code> for a full transition. Note, that some packages are currently newer in the official repositories and will be downgraded, therefore.
     </ul></p>
