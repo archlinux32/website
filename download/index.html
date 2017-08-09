@@ -9,13 +9,13 @@
 
 </head>
 
-<style>
-#archnavbarlist li#anb-home a {
- color: #fff !important;
-}
-</style>
-
 <body>
+    <style>
+    #archnavbarlist li#anb-home a {
+     color: #fff !important;
+    }
+    </style>
+
     <div id="archnavbar" class="anb-home">
         <div id="archnavbarlogo"><h1><a href="/" title="Return to the main page">Arch Linux 32</a></h1></div>
         <div id="archnavbarmenu">
@@ -58,15 +58,15 @@
 
     <p>If you plan to move from the <a href="https://www.archlinux.org/packages/">official repositories</a>
     to <a href="https://mirror.archlinux32.org/i686/">our community maintained repositories</a>, follow
-    these steps:
+    these steps:</p>
     <ul>
         <li> Put any mirror from <a href="https://raw.githubusercontent.com/archlinux32/packages/master/core/pacman-mirrorlist/mirrorlist">our mirrolist</a>
-             into <code>/etc/pacman.d/mirrorlist</code>.
+             into <code>/etc/pacman.d/mirrorlist</code>.</li>
         <li> Execute <code>pacman -Syyw archlinux32-keyring</code> to download our keyring package.
-             Note, that the signature is by 0x7C98C4C3DE926168DC46FBAA3D06644243BF68D3, which is not trusted by pacman (yet).
-        <li> Execute <code>pacman -U /var/cache/pacman/pkg/archlinux32-keyring-*.pkg.tar.xz</code> to install our keyring package.
-        <li> Run <code>pacman -Suu</code> for a full transition. Note, that some packages are currently newer in the official repositories and will be downgraded, therefore.
-    </ul></p>
+             Note, that the signature is by 0x7C98C4C3DE926168DC46FBAA3D06644243BF68D3, which is not trusted by pacman (yet).</li>
+        <li> Execute <code>pacman -U /var/cache/pacman/pkg/archlinux32-keyring-*.pkg.tar.xz</code> to install our keyring package.</li>
+        <li> Run <code>pacman -Suu</code> for a full transition. Note, that some packages are currently newer in the official repositories and will be downgraded, therefore.</li>
+    </ul>
 
     <h3>BitTorrent Download (recommended)</h3>
 
