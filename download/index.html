@@ -66,7 +66,12 @@
         <li> Execute <code>pacman -Syyw archlinux32-keyring</code> to download our keyring package.
              Note, that the signature is by 0x7C98C4C3DE926168DC46FBAA3D06644243BF68D3, which is not trusted by pacman (yet).</li>
         <li> Execute <code>pacman -U /var/cache/pacman/pkg/archlinux32-keyring-*.pkg.tar.xz</code> to install our keyring package.</li>
-        <li> Run <code>pacman -Suu</code> for a full transition. Note, that some packages are currently newer in the official repositories and will be downgraded, therefore.</li>
+        <li> Run <code>pacman -Suu</code> for a full transition.
+            <ul>
+                <li> Note, that some packages are currently newer in the official repositories and will be downgraded, therefore.</li>
+                <li> Also note, that packages found in your package cache won't match the signatures from archlinux32 - either allow pacman to delete these cached packages or run <code>pacman -Sc</code> to clean your cache before you start upgrading.</li>
+            </ul>
+        </li>
     </ul>
 
     <h3>BitTorrent Download (recommended)</h3>
