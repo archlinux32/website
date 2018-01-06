@@ -64,7 +64,8 @@
     <ul>
         <li> Put any mirror from <a href="https://raw.githubusercontent.com/archlinux32/packages/master/core/pacman-mirrorlist/mirrorlist">our mirrolist</a>
              into <code>/etc/pacman.d/mirrorlist</code>.</li>
-        <li> Execute <code>pacman -Syy archlinux32-keyring-transition</code> to install our keyring transition package signed by one of the x86_64 archlinux devs.
+        <li> Execute <code>pacman -Syy archlinux32-keyring-transition</code> to install our keyring transition package signed by one of the x86_64 archlinux devs.</li>
+        <li> Execute <code>pacman -S archlinux32-keyring</code> to install our most recent keyring package.</li>
         <li> Run <code>pacman -Syuu</code> for a full transition.
             <ul>
                 <li> Note, that some packages are currently newer in the official repositories and will be downgraded, therefore.</li>
